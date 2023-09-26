@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">etsy-ui-automation-with-selenium</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">pl.globallogic.etsy.features.SearchFeatureVerificationTest</th>
+	    <th id="testClassNameId" hidden="true">SearchFeatureVerificationTest</th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Default Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\ivan.paulouski\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">temp-testng-customsuite.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:16</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>2</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+												
+											<tr>
+	<td class="time">1693581169402</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('8df2780d-74c6-4049-b75b-86532c93fcdf','block');changeSingleIcon('span-8df2780d-74c6-4049-b75b-86532c93fcdf');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.etsy.features.SearchFeatureVerificationTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-8df2780d-74c6-4049-b75b-86532c93fcdf' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1693581169402</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>shouldDisplayNotFoundPageForInvalidQuery</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>8.108s</span><br>
+	</td>
+	<td class="result">
+						<div class="noCollapse" id="8df2780d-74c6-4049-b75b-86532c93fcdf" style="display: block;">
+						<a href="javascript:toggleElement('exception-8df2780d-74c6-4049-b75b-86532c93fcdf','block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[contains(@class,&apos;wt-text-heading-02&apos;)] (tried for 5 second(s) with 500 milliseconds interval)<br/>
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;<br/>
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65329}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65329/devtoo..., se:cdpVersion: 116.0.5845.141, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 87b77fe3e5d9432de612df6a2305dc71</b></a><br/>
+		<div class="stackTrace" id="exception-8df2780d-74c6-4049-b75b-86532c93fcdf">
+					org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)<br/>
+					org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)<br/>
+					pl.globallogic.etsy.features.pageobjects.InvalidSearchResultPage.isVisible(InvalidSearchResultPage.java:22)<br/>
+					pl.globallogic.etsy.features.SearchFeatureVerificationTest.shouldDisplayNotFoundPageForInvalidQuery(SearchFeatureVerificationTest.java:22)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:848)<br/>
+					org.testng.TestRunner.run(TestRunner.java:621)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:336)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1114)<br/>
+					org.testng.TestNG.run(TestNG.java:1082)<br/>
+					com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br/>
+					com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+				
+												<tr>
+			<td class="time">1693581179708</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('ba3ac034-a5ce-4af3-b0b3-9d724abab647','block');changeSingleIcon('span-ba3ac034-a5ce-4af3-b0b3-9d724abab647');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>pl.globallogic.etsy.features.SearchFeatureVerificationTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-ba3ac034-a5ce-4af3-b0b3-9d724abab647' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1693581179708</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>shouldDisplaySearchResultsForValidQuery</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>3.311s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="ba3ac034-a5ce-4af3-b0b3-9d724abab647" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
